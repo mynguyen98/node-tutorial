@@ -1,16 +1,5 @@
-// GLOBALS  - NO WINDOW !!!!
+const _ = require("lodash");
 
-// __dirname  - path to current directory
-// __filename - file name
-// require    - function to use modules (CommonJS)
-// module     - info about current module (file)
-// process    - info about env where the program is being executed
-console.log(__dirname)
-console.log(__filename)
-console.log(require)
-const trial = setInterval(() => {
-  console.log('hello world')
-}, 1000)
-setTimeout(() => {
-  clearInterval(trial)
-}, 3000)
+const items = [1, [2, [3, 4]]];
+console.log(items);
+// video 29
