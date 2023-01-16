@@ -1,5 +1,14 @@
-const _ = require("lodash");
+const { readFile } = require('fs')
+console.log('started a first task')
 
-const items = [1, [2, [3, 4]]];
-console.log(items);
-// video 29
+// Check file path!!!
+readFile('./content/first.txt', 'utf8', (err, result) => {
+  if (err) {
+    console.log(err)
+    return
+  }
+  console.log(result)
+  console.log('completed first task')
+})
+
+console.log('starting next task')
